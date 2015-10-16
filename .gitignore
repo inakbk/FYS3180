@@ -1,0 +1,14 @@
+
+*.jpg
+
+*.aux
+
+*.log
+
+*.out
+
+*.gz
+
+report_cyclotron.toc
+
+*.toc

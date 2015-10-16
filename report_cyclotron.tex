@@ -34,6 +34,16 @@
 \begin{document}
 \maketitle
 
+\begin{figure}[htp]
+\centering
+\includegraphics[width=1\textwidth]{cactus_forside.jpg}
+\caption{Magne Guttormsen working on the CACTUS/SiRi detector.
+}
+\label{fig:tull}
+\end{figure}
+
+\newpage
+
 %{\scriptsize \noindent All source codes can be found at: \texttt{https://github.com/inakbk/Project\_1.git} in the folders \texttt{exercise\_b} and \texttt{exercise\_d}. }
 
 \tableofcontents
@@ -49,11 +59,79 @@ bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
 
 
 \section{Motivation and purpose}
-noe noe 
+The purpose of this article is to give an (brief) introduction to detectors, systems and methods used in experimental nuclear physics. Important because blablabla learning about how to prepare and conduct an experiment and most importantly analyze and interpret the possible error sources.
+
+Will give an short introduction to the OCL
+In this project we will focus on the basics of how the cyclotron works and 
+%One of the main projects at OCL is the study of level densities and radiative strength functions. These quantities are important for the understanding of thermodynamic and electromagnetic properties of the atomic nucleus. Also these studies are essential for the understanding of stellar evolution, as well as accelerator-driven transmutation of nuclear waste. (hentet fra nettsiden)
+
+We will choose a particular reaction and prepare as for a real experiment by calculating (....energy lost in the ...kin...). We will then use data from an earlier experiment, analyse it and discuss possible error sources(?). Will also vertify/compare data with exsisting databases(?).
+
+We will learn the terms: prompt time, particlebananas, thicknessspectra ++ (?)
+
+\section{How a general cyclotron works/the basic consepts of a cyclotron}
+%Explain what a cyclotron is and how it works.
+
+A cyclotron is a particle accelerator for charged particles. The particles are accelerated with an external electric field and combined with a magnetic field the particles are contained in an orbit inside the cyclotron. A simple (or consept(?)) cyclotron consists of two half -cylinders placed side by side as in fig (?)
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.4\textwidth]{cyclotron_draw.jpg}
+\caption{cyclotron copyright something.}
+\label{fig:tull}
+\end{figure}
+Every time the particles pass between the two cylinders they are accelerated by an oscillating electric field. Inside the cylinders the electric field is zero, but there is a magnetic field perpendicular to the plane showed in figure (?) containing the particles in a circular orbit. The electric field changes direction for each half round of the particles and therefore increasing speed and radius. When the radius of the particle beam is bigger than the radius of the cylinders the particles leave the cyclotron. 
+
+The particles leave the syclotron with the desired energy (speed) so that they can be directed to a target. When the beam hit the target there are many ways of detecting the events. We will have a closer look at the specifics of the Oslo Cyclotron Laboratory and which sort of experiments that are possible.(daarlig setning...?)
+
+%En syklotron er en partikkelakselerator for ladde partikler. Energi tilføres av et elektrisk felt, mens et magnetisk felt brukes for  ̊a holde partiklene inne i syklotronen. En enkel syklotron best ̊ar av to lukkede metalliske halvsylindere plassert like ved siden av hverandre, som vist i Figur 3. Halvsylindrene, som ofte kalles D-er p ̊a grunn av formen, ligger i et konstant magnetfelt vinkelrett p ̊a papirplanet. En protonkilde fører protoner inn i omr ̊adet mellom sylinderne, vi skal se p ̊a bevegelsen til et slikt proton. Mellom halvsylinderne virker det et oscillerende E-felt i x-retningen. Inne i halvsylinderne er det elektriske feltet lik null. Ved at spenningen over halvsylinderne veksler i takt med syklotronfrekvensen protonene har i B-feltet vil de f ̊a en akselerasjon hver gang de passerer fra en halvsylinder til den andre. Dermed vil farten og radien øke ved hver passering. N ̊ar partikkelbanens radius blir større enn radien i sylinderne forlater partiklene syklotronen.
 
 
-\section{noe}
+\section{The Oslo Cyclotron laboratory and the Oslo method(?)}
+The Oslo Cyclotron Laboratory (OCL) houses the only accelerator in Norway for ionized atoms in basic research\footnote{http://www.mn.uio.no/fysikk/english/research/about/infrastructure/OCL/index.html}. The accelerator is used in various fields of research for instance nuclear physics and nuclear chemistry. Other applications for the Cyclotrone are the production of isotopes for nuclear medicine.
 
+%Explain which sort of experiments we do in the lab: how do we measure emitted charged particles and gammas in coincidence, using SiRi and CACTUS. Explain that we can reconstruct the excitation energy levels of a nucleus from the measured charged particles and that we use this to build a coincidence matrix (related to probability of nuclear decay from excitation energy Ex with gammma energy Egamma). 
+
+%Show a drawing of the OCL: cyclotron and experimental hall. 
+
+%Include CACTUS-SiRi array, the analysing magnet, slits, etc. Explain how the beam travels from the cyclotron into the target chamber,
+
+
+%Briefly describe what SiRi and CACTUS are, and how we can use SIRI to plot the particle bananas and distinguish between the different kinds of particles. You might want to say what a scintillator is, and briefly define how the Si detector works.
+
+
+ CACTUS/SiRi detector can be used to study particle-gamma coincidences.
+
+The gamma radiation and particle(utsending) is measured with the CACTUS and SiRi detectors. The dataset consists of event files; large files where each measured parameter from each nuclear reaction is written down. There are millions of event files that have been analyzed and sorted out. --->possible to folllow the experiment back to the beginning and "see" what happened.
+
+
+
+
+\section{Choice of target/reaction (?)}
+%Make a drawing of the 28Si(p,p')28Si reaction, including the target, the dE-E detectors  and say that in this project we will analyse data from an experiment in which a 16MeV proton beam hits a 28Si target.
+
+Choose a reaction (Si)
+We will calculate the parameters that are important for the experiment (with software kin)
+We will use data from an earlier experiment.
+
+
+
+spesifics:
+we are going to analyse data from a reaction which a 16MeV proton beam on a 28Si target . the goal is to get familiar with the experimental methods at OCL and the data analysis
+
+
+
+\section{Preparation: kin software}
+%Explain that we have codes  (KIN) to simulate how the charged particles lose energy as they travel through the target, dtectors, etc. Write down the example done in class and the results. ​
+
+\section{Results/Data}
+\subsection{Raw particle-gamma coincidence matrix}
+
+\section{Analyze of the datasert}
+\subsection{Final particle-gamma coincidence matrix}
+
+\section{Multiplicity(?)}
+
+\section{Discussion and Experiences}
 
 
 \noindent\rule{\textwidth}{1pt}
