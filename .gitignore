@@ -12,3 +12,15 @@
 report_cyclotron.toc
 
 *.toc
+
+*.png
+
+*.aux
+
+*.log
+
+*.out
+
+*.pdf
+
+*.gz
