@@ -1,14 +1,18 @@
 \BOOKMARK [1][-]{section.1}{Motivation and purpose}{}% 1
 \BOOKMARK [1][-]{section.2}{Theory of experimental nuclear physics, what to measure}{}% 2
-\BOOKMARK [1][-]{section.3}{Experimental setup}{}% 3
+\BOOKMARK [1][-]{section.3}{Experimental setup/method}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{The Oslo Cyclotron laboratory \(OCL\)}{section.3}% 4
-\BOOKMARK [1][-]{section.4}{Data analysis of experimental data and the Oslo method\(?\)}{}% 5
-\BOOKMARK [2][-]{subsection.4.1}{Distinguishing particles: Particle bananas}{section.4}% 6
-\BOOKMARK [2][-]{subsection.4.2}{The theory of coincidence matrix}{section.4}% 7
-\BOOKMARK [1][-]{section.5}{Choice of target/reaction \(?\)}{}% 8
-\BOOKMARK [1][-]{section.6}{Preparation before experiment: kin software?}{}% 9
-\BOOKMARK [1][-]{section.7}{Results/Data}{}% 10
-\BOOKMARK [2][-]{subsection.7.1}{Raw particle-gamma coincidence matrix}{section.7}% 11
-\BOOKMARK [1][-]{section.8}{Analyze of the dataset}{}% 12
-\BOOKMARK [2][-]{subsection.8.1}{Final particle-gamma coincidence matrix}{section.8}% 13
-\BOOKMARK [1][-]{section.9}{Discussion and Experiences}{}% 14
+\BOOKMARK [2][-]{subsection.3.2}{Choice of reaction}{section.3}% 5
+\BOOKMARK [1][-]{section.4}{Data analysis of experimental data and the Oslo method\(?\)}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Particle calibration and bananas}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Selecting a reaction}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{-calibration}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{Treatment of the time signals}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.5}{ The coincidence matrix}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Choice of target/reaction \(?\)}{}% 12
+\BOOKMARK [1][-]{section.6}{Preparation before experiment: kin software?}{}% 13
+\BOOKMARK [1][-]{section.7}{Results/Data}{}% 14
+\BOOKMARK [2][-]{subsection.7.1}{Raw particle-gamma coincidence matrix}{section.7}% 15
+\BOOKMARK [1][-]{section.8}{Analyze of the dataset}{}% 16
+\BOOKMARK [2][-]{subsection.8.1}{Final particle-gamma coincidence matrix}{section.8}% 17
+\BOOKMARK [1][-]{section.9}{Discussion and Experiences}{}% 18

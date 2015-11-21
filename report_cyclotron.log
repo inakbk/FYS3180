@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.22)  21 NOV 2015 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.22)  21 NOV 2015 22:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -428,23 +428,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<cactus_forside.jpg, id=60, 508.90125pt x 298.11375pt>
+<cactus_forside.jpg, id=64, 380.42125pt x 290.08376pt>
 File: cactus_forside.jpg Graphic file (type jpg)
 
 <use cactus_forside.jpg>
 Package pdftex.def Info: cactus_forside.jpg used on input line 41.
-(pdftex.def)             Requested size: 442.65375pt x 259.31593pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 42.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-Underfull \hbox (badness 3029) in paragraph at lines 42--42
-[]\T1/cmr/bx/n/10.95 Figure 1: |\T1/cmr/m/n/10.95 Magne Gut-torm-sen work-ing o
-n the CAC-TUS/SiRi de-tec-tor. From
- []
-
-[1
+(pdftex.def)             Requested size: 442.65375pt x 337.54642pt.
+ [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./cactu
 s_forside.jpg>] (./report_cyclotron.toc)
@@ -452,79 +442,142 @@ s_forside.jpg>] (./report_cyclotron.toc)
 \openout4 = `report_cyclotron.toc'.
 
  [2]
-<cyclotron_draw.jpg, id=95, 1204.5pt x 1238.6275pt>
+<cyclotron_draw.jpg, id=99, 1204.5pt x 1238.6275pt>
 File: cyclotron_draw.jpg Graphic file (type jpg)
  <use cyclotron_draw.jpg>
-Package pdftex.def Info: cyclotron_draw.jpg used on input line 94.
+Package pdftex.def Info: cyclotron_draw.jpg used on input line 95.
 (pdftex.def)             Requested size: 177.05879pt x 182.06282pt.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 96.
 
-Underfull \hbox (badness 1721) in paragraph at lines 95--95
-[]\T1/cmr/bx/n/10.95 Figure 2: |\T1/cmr/m/n/10.95 A sim-ple il-lus-tra-tion of 
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 1721) in paragraph at lines 96--96
+[]\T1/cmr/bx/n/10.95 Figure 1: |\T1/cmr/m/n/10.95 A sim-ple il-lus-tra-tion of 
 a cy-clotron. The il-lus-tra-tion is taken from
  []
 
 
-Overfull \hbox (15.6743pt too wide) in paragraph at lines 95--95
+Overfull \hbox (15.6743pt too wide) in paragraph at lines 96--96
 \T1/cmtt/m/n/10.95 http://www.mn.uio.no/fysikk/english/research/about/infrastru
 cture/OCL/ocl-photos/| 
  []
 
-[3] <ocl-layout_mini.jpg, id=106, 537.207pt x 444.7014pt>
+[3] <ocl-layout_mini.jpg, id=109, 537.207pt x 444.7014pt>
 File: ocl-layout_mini.jpg Graphic file (type jpg)
 
 <use ocl-layout_mini.jpg>
-Package pdftex.def Info: ocl-layout_mini.jpg used on input line 105.
+Package pdftex.def Info: ocl-layout_mini.jpg used on input line 106.
 (pdftex.def)             Requested size: 265.59494pt x 219.86662pt.
- <cactus_siri.png, id=111, 1001.7425pt x 649.42625pt>
+ <cactus_siri.png, id=114, 1001.7425pt x 649.42625pt>
 File: cactus_siri.png Graphic file (type png)
 
 <use cactus_siri.png>
-Package pdftex.def Info: cactus_siri.png used on input line 118.
+Package pdftex.def Info: cactus_siri.png used on input line 119.
 (pdftex.def)             Requested size: 221.32687pt x 143.47868pt.
  [4 <./cyclotron_draw.jpg>]
-<siri.png, id=127, 1103.12125pt x 387.4475pt>
+
+Package caption Warning: \label without proper \caption on input line 43.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:front_page' on page 5 undefined on input line 124
+.
+
+<siri.png, id=132, 1103.12125pt x 387.4475pt>
 File: siri.png Graphic file (type png)
  <use siri.png>
-Package pdftex.def Info: siri.png used on input line 128.
+Package pdftex.def Info: siri.png used on input line 129.
 (pdftex.def)             Requested size: 354.12434pt x 124.37592pt.
- [5 <./ocl-layout_mini.jpg>] [6 <./cactus_siri.png> <./siri.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
- (./report_cyclotron.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
-Package rerunfilecheck Info: File `report_cyclotron.out' has not changed.
-(rerunfilecheck)             Checksum: CC5FA3C2A615964BC9F3D95949BEC908;1041.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
+ [5 <./ocl-layout_mini.jpg>] <reaction.png, id=144, 770.88pt x 578.16pt>
+File: reaction.png Graphic file (type png)
+ <use reaction.png>
+Package pdftex.def Info: reaction.png used on input line 145.
+(pdftex.def)             Requested size: 177.05879pt x 132.78874pt.
+
+[6 <./cactus_siri.png> <./siri.png>]
+<m_e_de_uncalibrated.pdf, id=156, 333.245pt x 325.215pt>
+File: m_e_de_uncalibrated.pdf Graphic file (type pdf)
+
+<use m_e_de_uncalibrated.pdf>
+Package pdftex.def Info: m_e_de_uncalibrated.pdf used on input line 168.
+(pdftex.def)             Requested size: 177.05879pt x 172.79485pt.
+
+<m_e_de_calibrated.pdf, id=157, 333.245pt x 294.09875pt>
+File: m_e_de_calibrated.pdf Graphic file (type pdf)
+
+<use m_e_de_calibrated.pdf>
+Package pdftex.def Info: m_e_de_calibrated.pdf used on input line 169.
+(pdftex.def)             Requested size: 177.05879pt x 156.26201pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 186.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gamma' on input line 186.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 186.
+
+[7 <./reaction.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
+ [8 <./m_e_de_uncalibrated.pdf> <./m_e_de_calibrated.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
+
+(./report_cyclotron.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
+
+
+Package rerunfilecheck Warning: File `report_cyclotron.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report_cyclotron.out':
+(rerunfilecheck)             Before: B130959CBDA455121451B6DC5B7B2971;1103
+(rerunfilecheck)             After:  C8E651AC85B8C9640231A183191425A0;1308.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
- 8758 strings out of 493117
- 130775 string characters out of 6135433
- 244800 words of memory out of 5000000
- 12047 multiletter control sequences out of 15000+600000
+ 8783 strings out of 493117
+ 131248 string characters out of 6135433
+ 245800 words of memory out of 5000000
+ 12062 multiletter control sequences out of 15000+600000
  23120 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,8n,58p,1048b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,8n,58p,1048b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on report_cyclotron.pdf (7 pages, 1807373 bytes).
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on report_cyclotron.pdf (8 pages, 4309793 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
