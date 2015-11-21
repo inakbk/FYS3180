@@ -14,6 +14,8 @@
 
 \setcounter{tocdepth}{2}
 
+\usepackage[labelfont=bf]{caption} %for bold captions (figure, table...)
+
 \lstset{language=c++}
 \lstset{alsolanguage=[90]Fortran}
 \lstset{basicstyle=\small}
@@ -82,43 +84,52 @@ introduce to a general reaction and Q val so easy to talk about siri/cactus
 
 then how to /what to measure
 
-\section{Experimental method, how to measure}
-\subsection{The basic consepts of a cyclotron}
-A cyclotron is a particle accelerator for charged particles. The particles are accelerated with an external electric field and together with a magnetic field the particles are contained in an orbit inside the cyclotron. In nuclear physics a cyclotron is used to accelerate charged particles so that they leave the cyclotron with desired energy. The goal is then to study nuclear reactions that occur when the particle beam is directed to a target with different detectors. 
+\section{Experimental setup}
+\subsubsection*{The basic consepts of a cyclotron}
+A cyclotron is a particle accelerator for charged particles. The particles are accelerated with an external electric field and together with a magnetic field the particles are contained in an orbit inside the cyclotron. In nuclear physics a cyclotron is used to accelerate charged particles so that they leave the cyclotron with the desired energy. The goal is then to study nuclear reactions that occur when the particle beam is directed to a target. Different detectors are used to meashure particles and $\gamma$-rays that are produced in the reaction. 
 
 A simple cyclotron consists of two half -cylinders placed side by side as in figure \ref{fig:cyclotron_draw}.
 \begin{figure}[htp]
 \centering
 \includegraphics[width=0.4\textwidth]{cyclotron_draw.jpg}
-\caption{cyclotron copyright something.}
+\caption{A simple illustration of a cyclotron. The illustration is taken from \texttt{http://www.mn.uio.no/fysikk/english/research/about/infrastructure/OCL/ocl-photos/}}
 \label{fig:cyclotron_draw}
 \end{figure}
 Every time the particles pass between the two cylinders they are accelerated by an oscillating electric field. Therefore the particles increase speed and radius for every half round. Inside the cylinders the electric field is zero, but there is a magnetic field perpendicular to the plane showed in figure \ref{fig:cyclotron_draw} that contain the particles in a circular orbit. When the radius of the particle beam is bigger than the radius of the cylinders the particles leave the cyclotron. 
 
-\subsection{The Oslo Cyclotron laboratory (OCL) and the Oslo method(?)}
-The Oslo Cyclotron Laboratory (OCL) houses the only accelerator in Norway for ionized atoms in basic research\footnote{http://www.mn.uio.no/fysikk/english/research/about/infrastructure/OCL/index.html}. The accelerator is used in various fields of research for instance nuclear physics and nuclear chemistry. Other applications for the Cyclotrone are the production of isotopes for nuclear medicine. The reasearch in nuclear physics at Oslo Cyclotron Laboratory mainly focus on studying the level densities and radiative strength functions where the overall goal is to better understand the nuclei. The 
+\subsection{The Oslo Cyclotron laboratory (OCL)}
+The Oslo Cyclotron Laboratory (OCL) houses the only accelerator in Norway for ionized atoms in basic research\footnote{http://www.mn.uio.no/fysikk/english/research/about/infrastructure/OCL/index.html}. The accelerator is used in various fields of research for instance nuclear physics and nuclear chemistry. Other applications for the Cyclotrone are the production of isotopes for nuclear medicine. The reasearch in nuclear physics at Oslo Cyclotron Laboratory mainly focus on studying the level densities and radiative strength functions where the overall goal is to better understand the atomic nuclei. 
 
-We can see the cyclotron vault to the far right in figure \ref{fig:OLC_exp_hall} with the cyclotron (MC-35 Scanditronix Cyclotron) at the bottom right. The beam of the accelerated particles travels from the cyclotron along the beam line through a switching magnet and to a analyzing magnet that directs the beam 90 degrees and out of the cyclotron vault. The beam then goes through another swiching magnet and into the experimantal hall and finally hitting the target chamber and the CACTUS-SiRi array to the far left. The swiching magnets can direct the beam to one of the other target stations, but we will only have a closer look at the CACTUS and SiRi detectors. 
-
-deflectors ? slits ?
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.8\textwidth]{ocl-layout_mini.jpg}
+\includegraphics[width=0.6\textwidth]{ocl-layout_mini.jpg}
 \caption{The experimentall hall of the Oslo Cyclotron Laboratory.}
 \label{fig:OLC_exp_hall}
 \end{figure}
 
+We can see the cyclotron vault to the far right in figure \ref{fig:OLC_exp_hall} with the cyclotron (MC-35 Scanditronix Cyclotron) at the bottom right. The beam of the accelerated particles travels first from the cyclotron along the beam line through a switching magnet and then to a analyzing magnet. The analyzing magnet directs the beam out of the cyclotron vault and into the experimental hall by turning the beam 90 degrees. The beam then goes through another swiching magnet before hitting the target chamber (CACTUS/SiRi) to the far left in figure \ref{fig:OLC_exp_hall}. Around the target chamber there are two detectors, CACTUS and SiRi. The swiching magnets can also direct the beam to different target stations, but we will only have a closer look at the target chamber associated to the CACTUS and SiRi arrays. 
+
+%deflectors ? slits ?
+
 \subsubsection{The CACTUS and SiRi detectors}
-The CACTUS/SiRi detector can be used to study particle-gamma coincidences. In figure \ref{fig: cactus_siri} we see an illustration of a particle from the beam hitting a target nucleus. After the reaction a gamma-ray and a particle is emitted in addition to the resulting nucleus beeing changed. We see that the gamma is measured by the CACTUS detector and the emitted particle by the SiRi detector. 
+The CACTUS/SiRi detector can be used to study particle-gamma coincidences. In figure \ref{fig: cactus_siri} we see an illustration of a particle from the beam hitting a target nucleus. After the reaction a gamma-ray and a particle is emitted in addition to the resulting nucleus beeing changed. We see that the gamma is measured by the CACTUS detector and the emitted particle by the SiRi detector. The figure indicates that the angle between the incident trajectory and the trajectory of the emmitted particle is given as $\theta$.
 \begin{figure}[htp]
 \centering
 \includegraphics[width=0.5\textwidth]{cactus_siri.png}
-\caption{The CACTUS/SiRi detector used to study particle-gamma coincidences.}
+\caption{A incident particle hitting a target nucleus. The resulting emmited $gamma$-ray is detected by the CACTUS detectors and the emmitted particle is detected by the SiRi detector. The angle between the incident trajectory and the trajectory of the emmitted particle is given as $\theta$.}
 \label{fig: cactus_siri}
 \end{figure}
 
-When looking at the front picture (figure \ref{fig:front_page}) it is not hard to imagine where the CACTUS detector have gotten its name from. The detector consists of 28 NaI detectors spherically distributed around the target chamber, pointing out like a Cactus. The NaI detectors are very efficient gammadetectors....
-Scintillators ?
+When looking at the front picture, figure \ref{fig:front_page}, it is not hard to imagine where the CACTUS detector have gotten its name from. The CACTUS detector meashures the energies of the $\gamma$-rays and counts the number of $\gamma$-rays. The detector consists of 28 NaI scintillation detectors spherically distributed around the target chamber, pointing out like a Cactus. Each of the NaI scintillation detectors  meashure the energy of the $\gamma$-radiation by using the excitation effect of the incident radiation on a scintillator material (NaI). When the scintillator is excited it produces a signal that is then converted into an electrical signal that the electronics process\footnote{https://en.wikipedia.org/wiki/Scintillation\_counter}. 
+
+
+
+
+
+
+
+
+
 
 The SiRi-array measure the energy of a particle and consists of 8 Si detectors on a ring. Each detector is divided into 8 strips which makes it possible to also measure the angle of the particle. In figure \ref{fig: siri} we see the Silicon Ring (SiRi) to the left and a drawing of one of the detectors on the right with the induvidual strips marked.
 \begin{figure}[htp]
@@ -134,7 +145,7 @@ The SiRi-array measure the energy of a particle and consists of 8 Si detectors o
 
 
 
-\section{How to analyze experimental data}
+\section{Data analysis of experimental data and the Oslo method(?)}
 The gamma radiation and particle(utsending) is measured with the CACTUS and SiRi detectors. The dataset consists of event files; large files where each measured parameter from each nuclear reaction is written down. There are millions of event files that have been analyzed and sorted out. --->possible to folllow the experiment back to the beginning and "see" what happened.
 
 \subsection{Distinguishing particles: Particle bananas}
@@ -154,7 +165,7 @@ we are going to analyse data from a reaction which a 16MeV proton beam on a 28Si
 
 
 
-\section{Preparation before experiment: kin software}
+\section{Preparation before experiment: kin software?}
 %Explain that we have codes  (KIN) to simulate how the charged particles lose energy as they travel through the target, dtectors, etc. Write down the example done in class and the results. ​
 
 \section{Results/Data}
