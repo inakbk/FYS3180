@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.22)  17 OCT 2015 13:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.22)  21 NOV 2015 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -414,7 +414,17 @@ File: cactus_forside.jpg Graphic file (type jpg)
 <use cactus_forside.jpg>
 Package pdftex.def Info: cactus_forside.jpg used on input line 39.
 (pdftex.def)             Requested size: 442.65375pt x 259.31593pt.
- [1
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 40.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 4531) in paragraph at lines 40--40
+[]\T1/cmr/m/n/10.95 Figure 1: []Magne Gut-torm-sen work-ing on the CAC-TUS/SiRi
+ de-tec-tor. From
+ []
+
+[1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./cactu
 s_forside.jpg>] (./report_cyclotron.toc)
@@ -422,26 +432,26 @@ s_forside.jpg>] (./report_cyclotron.toc)
 \openout4 = `report_cyclotron.toc'.
 
  [2]
-<cyclotron_draw.jpg, id=99, 1204.5pt x 1238.6275pt>
+<cyclotron_draw.jpg, id=100, 1204.5pt x 1238.6275pt>
 File: cyclotron_draw.jpg Graphic file (type jpg)
  <use cyclotron_draw.jpg>
 Package pdftex.def Info: cyclotron_draw.jpg used on input line 92.
 (pdftex.def)             Requested size: 177.05879pt x 182.06282pt.
 
-[3] <ocl-layout_mini.jpg, id=110, 537.207pt x 444.7014pt>
+[3] <ocl-layout_mini.jpg, id=111, 537.207pt x 444.7014pt>
 File: ocl-layout_mini.jpg Graphic file (type jpg)
 
 <use ocl-layout_mini.jpg>
 Package pdftex.def Info: ocl-layout_mini.jpg used on input line 106.
 (pdftex.def)             Requested size: 354.12434pt x 293.15099pt.
- <cactus_siri.png, id=112, 1001.7425pt x 649.42625pt>
+ <cactus_siri.png, id=113, 1001.7425pt x 649.42625pt>
 File: cactus_siri.png Graphic file (type png)
 
 <use cactus_siri.png>
 Package pdftex.def Info: cactus_siri.png used on input line 115.
 (pdftex.def)             Requested size: 221.32687pt x 143.47868pt.
  [4 <./cyclotron_draw.jpg>] [5 <./ocl-layout_mini.jpg> <./cactus_siri.png>] <si
-ri.png, id=132, 1103.12125pt x 387.4475pt>
+ri.png, id=133, 1103.12125pt x 387.4475pt>
 File: siri.png Graphic file (type png)
  <use siri.png>
 Package pdftex.def Info: siri.png used on input line 126.
@@ -458,11 +468,11 @@ Package rerunfilecheck Info: File `report_cyclotron.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
- 7734 strings out of 493117
- 111704 string characters out of 6135433
+ 7753 strings out of 493117
+ 112318 string characters out of 6135433
  225508 words of memory out of 5000000
- 11035 multiletter control sequences out of 15000+600000
- 22806 words of font info for 61 fonts, out of 8000000 for 9000
+ 11050 multiletter control sequences out of 15000+600000
+ 23120 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,8n,58p,708b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -477,11 +487,12 @@ xlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texl
 ive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texliv
 e/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/
 2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on report_cyclotron.pdf (7 pages, 1752062 bytes).
+14/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on report_cyclotron.pdf (7 pages, 1779745 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 198 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
  31 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
