@@ -1,18 +1,14 @@
 \BOOKMARK [1][-]{section.1}{Motivation and purpose}{}% 1
-\BOOKMARK [1][-]{section.2}{Theory of experimental nuclear physics, what to measure}{}% 2
-\BOOKMARK [1][-]{section.3}{Experimental setup/method}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{The Oslo Cyclotron laboratory \(OCL\)}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Choice of reaction}{section.3}% 5
-\BOOKMARK [1][-]{section.4}{Data analysis of experimental data and the Oslo method\(?\)}{}% 6
-\BOOKMARK [2][-]{subsection.4.1}{Particle calibration and bananas}{section.4}% 7
-\BOOKMARK [2][-]{subsection.4.2}{Selecting a reaction}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.3}{-calibration}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.4}{Treatment of the time signals}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.5}{ The coincidence matrix}{section.4}% 11
-\BOOKMARK [1][-]{section.5}{Choice of target/reaction \(?\)}{}% 12
-\BOOKMARK [1][-]{section.6}{Preparation before experiment: kin software?}{}% 13
-\BOOKMARK [1][-]{section.7}{Results/Data}{}% 14
-\BOOKMARK [2][-]{subsection.7.1}{Raw particle-gamma coincidence matrix}{section.7}% 15
-\BOOKMARK [1][-]{section.8}{Analyze of the dataset}{}% 16
-\BOOKMARK [2][-]{subsection.8.1}{Final particle-gamma coincidence matrix}{section.8}% 17
-\BOOKMARK [1][-]{section.9}{Discussion and Experiences}{}% 18
+\BOOKMARK [1][-]{section.2}{Experimental setup and method}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{The Oslo Cyclotron laboratory \(OCL\)}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Choice of reaction}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Data analysis of experimental data}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Particle calibration and bananas}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Selecting a reaction}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{-calibration}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.4}{Treatment of the time signals}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.5}{ The coincidence matrix}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{The Oslo method}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Unfolding of the coincidence matrix}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Multiplicity}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Discussion and Experiences}{}% 14
