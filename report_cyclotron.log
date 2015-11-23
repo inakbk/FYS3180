@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.22)  23 NOV 2015 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.22)  23 NOV 2015 21:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -582,82 +582,115 @@ File: m_nai_e_t_corrected_fit.pdf Graphic file (type pdf)
 <use m_nai_e_t_corrected_fit.pdf>
 Package pdftex.def Info: m_nai_e_t_corrected_fit.pdf used on input line 261.
 (pdftex.def)             Requested size: 177.05879pt x 112.52997pt.
-
-
-LaTeX Warning: Reference `fig: coincidence' on page 10 undefined on input line 
-274.
-
-[10 <./m_nai_e_t_corrected.pdf> <./m_nai_e_t_corrected_fit.pdf>]
-<m_alfna_week2.pdf, id=261, 333.245pt x 225.84375pt>
+ [10 <./m_nai_e_t_corrected.pdf> <./m_nai_e_t_corrected_fit.pdf>] <m_alfna_week
+2.pdf, id=262, 333.245pt x 225.84375pt>
 File: m_alfna_week2.pdf Graphic file (type pdf)
- <use m_alfna_week2.pdf>
+
+<use m_alfna_week2.pdf>
 Package pdftex.def Info: m_alfna_week2.pdf used on input line 278.
 (pdftex.def)             Requested size: 132.79747pt x 89.99817pt.
 
-<coincidence_wback.png, id=262, 774.895pt x 455.7025pt>
+<coincidence_wback.png, id=263, 655.44875pt x 372.39125pt>
 File: coincidence_wback.png Graphic file (type png)
 
 <use coincidence_wback.png>
 Package pdftex.def Info: coincidence_wback.png used on input line 279.
-(pdftex.def)             Requested size: 132.79747pt x 78.09421pt.
+(pdftex.def)             Requested size: 154.9315pt x 88.02335pt.
 
-<coincidence_noback.png, id=263, 940.51375pt x 793.96625pt>
+<coincidence_noback.png, id=264, 938.50626pt x 590.205pt>
 File: coincidence_noback.png Graphic file (type png)
 
 <use coincidence_noback.png>
 Package pdftex.def Info: coincidence_noback.png used on input line 280.
-(pdftex.def)             Requested size: 132.79747pt x 112.09947pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
+(pdftex.def)             Requested size: 132.79747pt x 83.5107pt.
  [11 <./m_alfna_week2.pdf> <./coincidence_wback.png> <./coincidence_noback.png>
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
- (./report_cyclotron.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 308.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
-Package rerunfilecheck Info: File `report_cyclotron.out' has not changed.
-(rerunfilecheck)             Checksum: 452FCA99FA1399A9B8E13E4B46FB4B11;952.
+<gamma_interaction.png, id=280, 481.8pt x 312.16624pt>
+File: gamma_interaction.png Graphic file (type png)
 
+<use gamma_interaction.png>
+Package pdftex.def Info: gamma_interaction.png used on input line 323.
+(pdftex.def)             Requested size: 132.79747pt x 86.0389pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gamma' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 340.
+
+
+LaTeX Warning: Reference `fig: gamma_decay' on page 12 undefined on input line 
+341.
+
+<gamma_decay.png, id=281, 510.90875pt x 279.0425pt>
+File: gamma_decay.png Graphic file (type png)
+ <use gamma_decay.png>
+Package pdftex.def Info: gamma_decay.png used on input line 345.
+(pdftex.def)             Requested size: 132.79747pt x 72.52805pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 369.
+
+[12 <./gamma_interaction.png>] [13 <./gamma_decay.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 369.
+ (./report_cyclotron.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 369.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 369.
+
+
+Package rerunfilecheck Warning: File `report_cyclotron.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report_cyclotron.out':
+(rerunfilecheck)             Before: 452FCA99FA1399A9B8E13E4B46FB4B11;952
+(rerunfilecheck)             After:  4408449A1F177312DA26562AD354E811;1021.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 308.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 369.
  ) 
 Here is how much of TeX's memory you used:
- 8850 strings out of 493117
- 132797 string characters out of 6135433
+ 8880 strings out of 493117
+ 133224 string characters out of 6135433
  248800 words of memory out of 5000000
- 12114 multiletter control sequences out of 15000+600000
- 23120 words of font info for 62 fonts, out of 8000000 for 9000
+ 12128 multiletter control sequences out of 15000+600000
+ 24356 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,8n,58p,1048b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,8n,58p,1048b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on report_cyclotron.pdf (11 pages, 78935205 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/cm-super/sftt1095.pfb>
+Output written on report_cyclotron.pdf (13 pages, 79146088 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 500000)
- 185 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 382 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 195 words of extra memory for PDF output out of 10000 (max. 10000000)
 

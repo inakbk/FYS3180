@@ -276,25 +276,94 @@ When the data from the detectors have been corrected we are ready to plot the fi
 \begin{figure}[htp]
 \centering
 \includegraphics[width=0.3\textwidth]{m_alfna_week2.pdf}
-\includegraphics[width=0.3\textwidth]{coincidence_wback}
+\includegraphics[width=0.35\textwidth]{coincidence_wback}
 \includegraphics[width=0.3\textwidth]{coincidence_noback}
 \caption{The coincidence matrix (the incident energy $E_x$ versus the $\gamma$-energy) plotted for different stages of the data analysis. \textbf{Left:} before particle calibration. \textbf{Middle:} after particle calibration with background. \textbf{Right:} the final coincidence matrix, calibrated and with the background substracted.}
 \label{fig: coincidence}
 \end{figure}
+%or is the matrix to the richt the unfolded matrix??
+
 
 %Show the coincidence matrix. Mention that there is background, how it can be measure and that it was subtracted. Show the diagonal Eg=Ex in the matrix. Why do we see some counts outside? Explain the peaks we see and comp.re them to the results from the nndc website or the TOI.
 
 \section{The Oslo method}
 noe noe tar lang tid
 
+The Oslo method is based on three main steps:
+\begin{enumerate}
+\item Unfolding of the $\gamma$-ray spectra
+\item Extraction of first-generation $\gamma$-rays
+\item Extraction of the nuclear level density and the gamma strength function
+\end{enumerate}
+
+will look at the first two. 
+
+Want this because:
+\[
+P(E_x,E_\gamma) \propto \tau(E_\gamma)\cdot \rho(E_\gamma, E_x)
+\]
+so it is nice to be able to get the first two in one experiment.
+
+
 \subsection{Unfolding of the coincidence matrix}
+%this step concerns the correction of the  -ray spectra for the response and the e ciency of the detectors. This correction is made for each excitation energy bin in order to obtain its cor- responding true  -ray spectra.
+The unfolding procedure corrects for the response of the detectors, or the ways that the $\gamma$-rays can interact with the matter in the detector. When the photon with energy $E_\gamma$ interacts with the detector, we will not see only one peak at the energy $E_\gamma$, we will se many peaks corresponding to the possible interactions of the photon with matter. 
+
+The $\gamma$-rays can interact with matter in the following processes:
+\begin{enumerate}
+\item The photo electric effect
+\item Compton scattering
+\item Pair reaction (the gamma can produce a electron-positron pair and one or both can escape. 
+\end{enumerate}
+
+In figure \ref{fig: gamma_interaction} we see an illustration giving a general picture of the peaks produced with the different effects mentioned above. To the far right we see the 'full energy peak' produced by the photo electric effect. Following to lower energies we notice the compton edge before the single escape peak. The single and double escape peaks corresponds to the escape of one or both of the particles in the electron-positron pair positioned 1x and 2x times the electron mass from the full energy peak. The 'backscattering peak' for the lowest possible energy with the compton effect is not included in the figure.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.3\textwidth]{gamma_interaction.png}
+\caption{An illustration of the number of counts versus the gamma energy for the three processes. .}
+\label{fig: gamma_interaction}
+\end{figure}
+
+It is therefore many processes that contributes to the final $\gamma$ spectrum. To correct, or unfold the measured gamma spectrum we need to obtain the response matrix $\bf R$ that contains all the information about the response of the detector. We can express the unfolded gamma spectrum $f$ as:
+\[
+f = \bf{R} u
+\]
+where $u$ is the measured spectrum. 
+
+The response $\bf R$ can be measured, and we assume here that this have already been done. So to obtain the unfolded matrix we simply type a command in the \texttt{mama} software developed at OCL. 
+%do not have the unfolded matrix??
+
 %Explain the interactions of gamma with matter, and what does unfolding mean.
 %Show the unfolded matrix.
 
-\subsection{Multiplicity}
+\subsection{Multiplicity and the extraction of the first-generation (primary) $\gamma$-rays emitted}
+In figure \ref{fig: gamma_decay} we see an illustration of the possible paths a photon can take to the ground state from an excited state. The secondary photons are marked with a red corcle, the primary unmarked. When we count the number of $\gamma$-rays with an energy corresponding to a step between two energy levels, we might also count the secondary photons. This will not give us the right picture of the probability to go from one energy level to another. We need a way to separate the different paths taken by the photon, a way to only select the primary photons. This can be done by introducing the multiplicity. 
 
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.4\textwidth]{gamma_decay.png}
+\caption{An illustration of the possible paths a photon emitted from an excited state can take to the ground state. The secondary photons are marked with a red corcle, the primary unmarked.}
+\label{fig: gamma_decay}
+\end{figure}
 
-not gotten eny results really, need more analyzing to get any
+The multiplicity is defined as the average number of $\gamma$-rays emitted for a given incident energy $E_x$. There are at least three methods for obtaining the multiplicity. The average multiplicity can be defined as:
+\begin{equation}
+\langle M \rangle = \frac{E_x}{\langle E_\gamma \rangle}
+\label{eq: M_calc}
+\end{equation}
+where $\langle E_\gamma \rangle$ is the mean of the gamma energies. Another definition is:
+\begin{equation}
+\langle M \rangle = c \cdot \frac{N_c}{N_s}
+\end{equation}
+where $c$ is a constant calculated from a energy level for which the multiplicity is known, by for example equation \ref{eq: M_calc}. $N_c$ is the coincidence spectre and $N_s$ is the single spectre for a given energy $E_x$. This is an iterative method also known as the 'first-generation method'. 
+%have not explained what single and coincidence spectre means??
+
+The next step in the Oslo method would have been to extract the nuclear level density and the strength function. 
+
+%would do next:
+%Extraction of the nuclear level density and  -strength function [55]: an iter- ative procedure is developed to fit the experimental matrix of primary  -rays and get both these statistical functions simultaneously. The calculated ex- pressions depend on three parameters, which are then calculated by fitting to experimental data, i.e. both nuclear level density and  -strength functions are normalized.
+
 \section{Discussion and Experiences}
 
 
