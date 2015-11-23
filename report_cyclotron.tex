@@ -271,6 +271,17 @@ But when we measure the $\gamma$-rays we might also measure delayed gammas, radi
 %- Selecting coincidences: show the plot and explain what is the prompt peak, what is the time resolution, and how we can calculate the time between beam pulses from the plot. Explain why we need to gate on the prompt peak.
 
 \subsection{ The coincidence matrix}
+When the data from the detectors have been corrected we are ready to plot the final goal; the coincidence matrix. In figure \ref{fig: coincidence} we see the coincidence matrix, the plot of the incident energy $E_x$ versus the $\gamma$-energy for different stages of the data analysis. The left plot is the coincidence matrix before the detector and time calibration, and the middle plot is after the calibration. To the right we find the final calibrated coincidence matrix with the background substracted. Due to the calibration we can see that the middle plot has clearer peaks than the left plot. All points under the diagonal $E_x=$E cannot correspond to the reaction because it implies that the incomming energy $E_x$ would be less than the resulting energy E. So it is expected that all the counts below this diagonal disappeares when we substract the background, which we can see is the case in the plot to the right. 
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.3\textwidth]{m_alfna_week2.pdf}
+\includegraphics[width=0.3\textwidth]{coincidence_wback}
+\includegraphics[width=0.3\textwidth]{coincidence_noback}
+\caption{The coincidence matrix (the incident energy $E_x$ versus the $\gamma$-energy) plotted for different stages of the data analysis. \textbf{Left:} before particle calibration. \textbf{Middle:} after particle calibration with background. \textbf{Right:} the final coincidence matrix, calibrated and with the background substracted.}
+\label{fig: coincidence}
+\end{figure}
+
 %Show the coincidence matrix. Mention that there is background, how it can be measure and that it was subtracted. Show the diagonal Eg=Ex in the matrix. Why do we see some counts outside? Explain the peaks we see and comp.re them to the results from the nndc website or the TOI.
 
 \section{The Oslo method}
