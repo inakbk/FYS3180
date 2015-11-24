@@ -192,11 +192,11 @@ where $x$ is the channel number, $a$ the shift in the energies and $b$ the gain 
 To the right in figure \ref{fig: de_e} we see the calibrated bananas obtained when the sorting routine is run with the gain-shift file included. We see that the calibrated plot is much clearer and have sharper excited state peaks than the uncalibrated plot. 
 
 \subsection{Selecting the data for the ${}^{28}$Si(p,p')$^{28}$Si reaction}
-When the particle calibration is done we want to only select the data from the ${}^{28}$Si(p,p')$^{28}$Si reaction, we need to gate on the banana corresponding to the emitted protons. This is done by using or 'commenting in' the range file \texttt{zrangep.dat} in the \texttt{.batch}-file. In the left plot in figure \ref{fig: banana_gate} we see the aparent thickness of the $\Delta$E detector. The peak is centered at $\approx 130 \mu$m which is the actual thickness of the $\Delta$E detector, and the width or range is $\approx 20\mu$m. The range file includes the peak and width read from the left plot in figure \ref{fig: banana_gate}. 
+When the particle calibration is done we want to only select the data from the ${}^{28}$Si(p,p')$^{28}$Si reaction, we need to gate on the banana corresponding to the emitted protons. This is done by using or 'commenting in' the range file \texttt{zrangep.dat} in the \texttt{.batch}-file. In the left plot in figure \ref{fig: banana_gate} we see the aparent thickness of the $\Delta$E detector. The peak is centered at $\approx 130 \mu$m which is the actual thickness of the $\Delta$E detector, and the width or range is $\approx 20\mu$m. The range file includes the peak and range read from the 'thicjness plot', left plot in figure \ref{fig: banana_gate}. 
 
-When we use the range file in the \texttt{.batch}-file the sorting routine distributes the experimental data around the actual thickness of the $\Delta$E detector. This means that we have gated on the banana that corresponds to the emitted proton or the desired reaction ${}^{28}$Si(p,p')$^{28}$Si. The selected data can therefore now give us information about the reaction we want to study. 
+When the range file is included in the \texttt{.batch}-file the sorting routine distributes the experimental data around the actual thickness of the $\Delta$E detector. This means that we have gated on the banana that corresponds to the emitted proton or the desired reaction ${}^{28}$Si(p,p')$^{28}$Si. The selected data can therefore now give us information about the reaction we want to study. 
 
-In figure \ref{fig: banana_gate} we see the 'banana' plot obtained when running the sorting routine again with the range file. By comparing with the right plot in figure \ref{fig: de_e} we see that we have selected the banana corresponding to the emitted protons. 
+To the left in figure \ref{fig: banana_gate} we see the 'banana' plot obtained when running the sorting routine again with the range file. By comparing with the right plot in figure \ref{fig: de_e} we see that we have selected the banana corresponding to the emitted protons. 
 
 \begin{figure}[htp]
 \centering 
@@ -210,28 +210,28 @@ After including the range file and sorting again we can find the excitation leve
 
 \begin{table}
 \centering
-\caption{The energy levels of ${}^{28}$Si from the Chart of Nuclides found on the NNDC website \texttt{//www.nndc.bnl.gov/chart/getdataset.jsp?nucleus=28SI\&unc=nds}}
+\caption{The energy levels of ${}^{28}$Si from the Chart of Nuclides found on the NNDC website \texttt{//www.nndc.bnl.gov/chart/getdataset.jsp?nucleus=28SI\&unc=nds}. The uncertain digits are given in a parenthesis. }
 \begin{tabular}{|c|}
 \hline 
 E\_x [keV] \\ 
 \hline 
 0 \\ 
 \hline 
-1779.030 11 \\ 
+1779.030 (11) \\ 
 \hline 
-4617.86 4 \\ 
+4617.86 (4) \\ 
 \hline 
-4979.92 8 \\ 
+4979.92 (8) \\ 
 \hline 
-6276.2 7 \\ 
+6276.2 (7) \\ 
 \hline 
-6690.74 15 \\ 
+6690.74 (15) \\ 
 \hline 
 \end{tabular} 
 \label{tab: e_levels}
 \end{table}
 
-In figure \ref{fig: proj_y_excitation} we see the coincidence matrix projected on the y axis. Each peak in the plot correspond to an excited state of ${}^{28}$Si. The six first excited stated are marked with a red circle. We see that the values of the excited states marked corresponds well to the values of the energy levels found in table \ref{tab: e_levels}. Peaks that do not correspond to a energy level of ${}^{28}$Si is contamination which will be corrected for at a later stage (?). 
+In figure \ref{fig: proj_y_excitation} we see the coincidence matrix projected on the y axis. Each peak in the plot correspond to an excited state of ${}^{28}$Si. The six first excited stated are marked with a red circle. We see that the values of the excited states marked corresponds well to the values of the energy levels found in table \ref{tab: e_levels}. Peaks that do not correspond to a energy level of ${}^{28}$Si is most likely contamination which will be corrected for at a later stage in the analyze process. 
 
 \begin{figure}[htp]
 \centering
@@ -247,7 +247,7 @@ In figure \ref{fig: proj_y_excitation} we see the coincidence matrix projected o
 We will now look at the procedure used to calibrate the NaI detectors and the time signals. The CACTUS $\gamma$ detector consists of 28 NaI detectors, and due to differences in the electronics the time signals are not aligned. To correct for this we will use a similar procedure as in section \ref{sec: particle_calib}. We will choose one of the 28 detectors as a reference and read of the peak of (?). We will then use this peak to shift the count(?) peaks for all the other detectors so that all the peaks are aligned. We will also account for the different responce in the detectors, or the gain as in section \ref{sec: particle_calib}.
 %could have included m_nai_e plot to show alignment of signals, but what are the axes?
 
-Finally we have to correct for the fact that the time signal is dependent on the energy, or the amplitude of the signal, also often refered to as the problem of walk'. This problem originates form the use of a spesific type of discriminator. The discriminator gives a time signal, or a count, every time the amplitude are above a certain threshold. This threshold can either be fixed and independent on the signal, or it can be a fraction of the amplitude. The latter are called Constant Fracion Discriminator (CFD) which is the expensive version, and the first are called called Leading Edge Discriminators (LED) which are cheaper. In this experiment we have used LED which gives that the time signal is dependent on the energy. 
+Finally we have to correct for the fact that the time signal, or the amplitude of the signal is dependent on the energy which is often refered to as 'the problem of walk'. This problem originates form the use of a spesific type of discriminator. The discriminator gives a time signal, or a count, every time the amplitude are above a certain threshold. This threshold can either be fixed and independent on the signal, or it can be a fraction of the amplitude. The latter are called Constant Fracion Discriminator (CFD) which is the expensive version, and the first are called called Leading Edge Discriminators (LED) which are cheaper. In this experiment we have used LED which gives that the time signal is dependent on the energy. 
 
 To correct for the 'problem of walk' we have done a curve fitting to the data of from all the NaI detectors, and coreccted for the energy dependence. In figure \ref{fig: time_corr} we see the uncorrected and corrected plot of the time channels versus the energy of all the NaI detectors.
 
@@ -274,16 +274,24 @@ When the data from the detectors have been corrected we are ready to plot the fi
 \includegraphics[width=0.3\textwidth]{m_alfna_week2.pdf}
 \includegraphics[width=0.35\textwidth]{coincidence_wback}
 \includegraphics[width=0.3\textwidth]{coincidence_noback}
-\caption{The coincidence matrix (the incident energy $E_x$ versus the $\gamma$-energy) plotted for different stages of the data analysis. \textbf{Left:} before particle calibration. \textbf{Middle:} after particle calibration with background. \textbf{Right:} the final coincidence matrix, calibrated and with the background substracted.}
+\caption{The coincidence matrix, the incident energy $E_x$ versus the $\gamma$-energy plotted for different stages of the data analysis. \textbf{Left:} before particle calibration. \textbf{Middle:} after particle calibration with background. \textbf{Right:} the final coincidence matrix, calibrated and with the background substracted.}
 \label{fig: coincidence}
 \end{figure}
-%or is the matrix to the richt the unfolded matrix??
+%or is the matrix to the right the unfolded matrix??
 
 
 %Show the coincidence matrix. Mention that there is background, how it can be measure and that it was subtracted. Show the diagonal Eg=Ex in the matrix. Why do we see some counts outside? Explain the peaks we see and comp.re them to the results from the nndc website or the TOI.
 
 \section{The Oslo method}
-noe noe tar lang tid
+Usually the reason to obtain the coincidence matrix is to be able to perform the Oslo method. The benefit of performing the Oslo method is that it is possible to extract both the nuclear level density $\rho$ and the gamma strength function $\tau$ from one experiment. This again can be used to obtain the probability $P$ for the reaction given the incident energy $E_x$ and the gamma energy $E_\gamma$ because:
+\[
+P(E_x,E_\gamma) \propto \tau(E_\gamma)\cdot \rho(E_\gamma, E_x)
+\]
+
+
+--> calculate neutron capture cross sections in a wide range of neutron energy. %(how probabable to capture a neutron)
+This again is very useful for Nuclear reactor physics and astro physics. 
+TALYS?
 
 The Oslo method is based on three main steps:
 \begin{enumerate}
@@ -291,14 +299,7 @@ The Oslo method is based on three main steps:
 \item Extraction of first-generation $\gamma$-rays
 \item Extraction of the nuclear level density and the gamma strength function
 \end{enumerate}
-
 will look at the first two. 
-
-Want this because:
-\[
-P(E_x,E_\gamma) \propto \tau(E_\gamma)\cdot \rho(E_\gamma, E_x)
-\]
-so it is nice to be able to get the first two in one experiment.
 
 
 \subsection{Unfolding of the coincidence matrix}
@@ -317,7 +318,7 @@ In figure \ref{fig: gamma_interaction} we see an illustration giving a general p
 \begin{figure}[htp]
 \centering
 \includegraphics[width=0.3\textwidth]{gamma_interaction.png}
-\caption{An illustration of the number of counts versus the gamma energy for the three processes. .}
+\caption{An illustration of the number of counts versus the gamma energy with the typical peaks obtained due to the photo electric effect, Compton scattering or pair reactions. }
 \label{fig: gamma_interaction}
 \end{figure}
 
@@ -325,21 +326,19 @@ It is therefore many processes that contributes to the final $\gamma$ spectrum. 
 \[
 f = \bf{R} u
 \]
-where $u$ is the measured spectrum. 
-
-The response $\bf R$ can be measured, and we assume here that this have already been done. So to obtain the unfolded matrix we simply type a command in the \texttt{mama} software developed at OCL. 
+where $u$ is the measured spectrum. The response $\bf R$ can be measured, and we assume here that this have already been done. To obtain the unfolded matrix we simply type a command in the \texttt{mama} software developed at OCL. 
 %do not have the unfolded matrix??
 
 %Explain the interactions of gamma with matter, and what does unfolding mean.
 %Show the unfolded matrix.
 
 \subsection{Multiplicity and the extraction of the first-generation (primary) $\gamma$-rays emitted}
-In figure \ref{fig: gamma_decay} we see an illustration of the possible paths a photon can take to the ground state from an excited state. The secondary photons are marked with a red corcle, the primary unmarked. When we count the number of $\gamma$-rays with an energy corresponding to a step between two energy levels, we might also count the secondary photons. This will not give us the right picture of the probability to go from one energy level to another. We need a way to separate the different paths taken by the photon, a way to only select the primary photons. This can be done by introducing the multiplicity. 
+In figure \ref{fig: gamma_decay} we see an illustration of the possible paths a photon can take to the ground state from an excited state. The secondary photons are marked with a red circle, the primary unmarked. When we count the number of $\gamma$-rays with an energy corresponding to a step between two energy levels, we might also count the secondary photons. This will not give us the right picture of the probability to go from one energy level to another. We need a way to separate the different paths taken by the photon, a way to only select the primary photons. This can be done by introducing the multiplicity. 
 
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.4\textwidth]{gamma_decay.png}
-\caption{An illustration of the possible paths a photon emitted from an excited state can take to the ground state. The secondary photons are marked with a red corcle, the primary unmarked.}
+\includegraphics[width=0.45\textwidth]{gamma_decay.png}
+\caption{An illustration of the possible paths a photon emitted from an excited state can take to the ground state. The secondary photons are marked with a red circle, the primary unmarked.}
 \label{fig: gamma_decay}
 \end{figure}
 
@@ -351,18 +350,22 @@ The multiplicity is defined as the average number of $\gamma$-rays emitted for a
 where $\langle E_\gamma \rangle$ is the mean of the gamma energies. Another definition is:
 \begin{equation}
 \langle M \rangle = c \cdot \frac{N_c}{N_s}
+\label{eq: M_iterative}
 \end{equation}
-where $c$ is a constant calculated from a energy level for which the multiplicity is known, by for example equation \ref{eq: M_calc}. $N_c$ is the coincidence spectre and $N_s$ is the single spectre for a given energy $E_x$. This is an iterative method also known as the 'first-generation method'. 
+where $c$ is a constant calculated from a energy level for which the multiplicity is known, by for example equation \ref{eq: M_calc}. $N_c$ is the coincidence spectre and $N_s$ is the single spectre for a given energy $E_x$. The method based on equation \ref{eq: M_iterative} is an iterative method also known as the 'first-generation method'
 %have not explained what single and coincidence spectre means??
 
-The next step in the Oslo method would have been to extract the nuclear level density and the strength function. 
+The next step in the Oslo method would have been to extract the nuclear level density and the gamma strength function, but we have left this out due to limited time. A master thesis would have included the whole Oslo method and would have a more detailed description of the analysis process than this paper. 
+
 
 %would do next:
 %Extraction of the nuclear level density and  -strength function [55]: an iter- ative procedure is developed to fit the experimental matrix of primary  -rays and get both these statistical functions simultaneously. The calculated ex- pressions depend on three parameters, which are then calculated by fitting to experimental data, i.e. both nuclear level density and  -strength functions are normalized.
 
 \section{Discussion and Experiences}
 
-what would use this to talys bla bla bla bla bla bla
+%what would use this to talys bla bla bla bla bla bla
+
+
 %see week 6 notes in the begining
 
 
