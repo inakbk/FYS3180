@@ -162,13 +162,13 @@ The data stored from the experiment are the 'dE' and 'E' signals of the charged 
 The sorting codes can first be run without calibration parameters ('plain') and later with calibration when the parameters are found step by step. All source codes can be found at \texttt{https://github.com/oslocyclotronlab/oslo-method-software}.
 
 \subsection{Particle calibration and bananas} \label{sec: particle_calib}
-First we have to calibrate the particle detectors, or the SiRi-array. This is done by plotting 'dE' versus 'E', obtaining curves commonly known as 'bananas'. To the left in figure \ref{fig: de_e} we see the uncalibrated plot of the bananas obtained when the sorting routine is run 'plain'. The bananas are characteristic for each type of ejected particle, there is one banana for each particle. On each banana we can see peaks corresponding to the excited states of the particle. 
+First we have to calibrate the particle detectors, or the SiRi-array. This is done by plotting 'dE' versus 'E', obtaining curves commonly known as 'bananas'. To the left in figure \ref{fig: de_e} we see the uncalibrated plot of the bananas obtained when the sorting routine is run 'plain'. The bananas are characteristic for each type of ejected particle, there is one banana for each particle. On each banana we can see peaks corresponding to the excited states of the target nucleus. 
 
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.4\textwidth]{m_e_de_uncalibrated.pdf}
-\includegraphics[width=0.4\textwidth]{m_e_de_calibrated.pdf} 
-\caption{The 'particle bananas', or 'dE' versus 'E' plotted. \textbf{Left:} uncalibrated. \textbf{Right:} calibrated. Each banana corresponds to one emitted particle. We can also see the peacks corresponding to the excited states of the particle.}
+\includegraphics[width=0.4\textwidth]{m_e_de_uncalibrated.png}
+\includegraphics[width=0.45\textwidth]{m_e_de_calibrated.png} 
+\caption{The 'particle bananas', or 'dE' versus 'E' plotted. \textbf{Left:} uncalibrated. \textbf{Right:} calibrated. Each banana corresponds to one emitted particle. We can also see the peacks corresponding to the excited states of the target nucleus.}
 \label{fig: de_e}
 \end{figure}
 
@@ -192,8 +192,8 @@ To the left in figure \ref{fig: banana_gate} we see the 'banana' plot obtained w
 
 \begin{figure}[htp]
 \centering 
-\includegraphics[width=0.4\textwidth]{h_thick_fromcalibrated_zoom.pdf}
-\includegraphics[width=0.4\textwidth]{m_e_de_thick.pdf}
+\includegraphics[width=0.4\textwidth]{h_thick_fromcalibrated_zoom.png}
+\includegraphics[width=0.4\textwidth]{m_e_de_thick.png}
 \caption{Selecting the data for the ${}^{28}$Si(p,p')$^{28}$Si reaction. \textbf{Left:} The calculated thickness of the $\Delta$E detector. The peak is centered at $\approx 130 \mu$m which is the actual thickness of the $\Delta$E detector. Other peaks would have corresponded to other ejected particles. \textbf{Right:} The 'banana' plot after particle calibration and gating on one particle banana.}
 \label{fig: banana_gate}
 \end{figure}
@@ -244,8 +244,8 @@ To correct for the 'problem of walk' we have done a curve fitting to the data of
 
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.4\textwidth]{m_nai_e_t_corrected.pdf}
-\includegraphics[width=0.4\textwidth]{m_nai_e_t_corrected_fit.pdf}
+\includegraphics[width=0.4\textwidth]{m_nai_e_t_corrected.png}
+\includegraphics[width=0.5\textwidth]{m_nai_e_t_corrected_fit.png}
 \caption{The time channels plotted versus the energy of the all NaI detectors. \textbf{Left:} uncalibrated plot with time signals shifted due to LED. \textbf{Right:} calibrated plot, corrected whith a curve fitting to the data in the left plot.}
 \label{fig: time_corr}
 \end{figure}
@@ -262,7 +262,7 @@ When the data from the detectors have been corrected we are ready to plot the fi
 
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.45\textwidth]{m_alfna_week2.pdf}
+\includegraphics[width=0.45\textwidth]{m_alfna_week2.png}
 \includegraphics[width=0.5\textwidth]{coincidence_wback}
 %\includegraphics[width=0.3\textwidth]{coincidence_noback}
 \caption{The coincidence matrix, the excitation energy $E_x$ versus the $\gamma$-energy plotted for different stages of the data analysis. \textbf{Left:} before particle calibration. \textbf{Right:} after particle calibration with background (?). }%\textbf{Right:} the final coincidence matrix, calibrated and with the background substracted.}
