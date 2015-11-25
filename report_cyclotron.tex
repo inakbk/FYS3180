@@ -29,7 +29,7 @@
 \lstset{showtabs=false}
 \lstset{breaklines}
 
-\title{{\Huge {\bf Cool Title}}\linebreak \linebreak \small{Project in FYS-3180 at} \linebreak \Large{ Oslo Cyclotron Laboratory}  }
+\title{{\huge {\bf An introduction to the experimental setup and analyze methods used at the Oslo Cyclotron Laboratory by use of experimental data from the $\bf {}^{28}\mathrm{ \bf Si(p,p')}^{28}\mathrm{\bf Si}$ reaction.}}\linebreak \linebreak \small{A project in FYS-3180 at} \linebreak \Large{the University of Oslo} }
 \author{Ina K. B. Kullmann}
 \date{\today}
 
@@ -37,30 +37,22 @@
 \maketitle
 
 \begin{abstract}
-The purpose of this article is to give a brief introduction to the detectors, systems and methods used in experimental nuclear physics at the Oslo Cyclotrone Laboratory. Thus the Oslo method and why it is useful will be described briefly.
+The purpose of this article is to give a brief introduction to the detectors, systems and methods used in experimental nuclear physics at the Oslo Cyclotrone Laboratory. The Oslo method and why it is useful will be described briefly.
 
 The goal is to learn about how one would prepare for an experiment but most importantly how to correct for different effects due to the response of the detectors. We will choose the reaction ${}^{28}\mathrm{Si(p,p')}^{28}\mathrm{Si}$ and study the raw data from an previous experiment. During the analyze process we will also compare the experimental data with exsisting online databases. 
 
-Our main result will be a final corrected coincidence matrix where the excitation energy $E_x$ is plotted versus the gamma energy $E_\gamma$ with number of counts on the z-axis. 
-
-%We will learn the terms: prompt time, particlebananas, thicknessspectra ++ 
-
-%abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract abstract 
-
-%bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
-
-%bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blav bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blav bla bla bla bla blav bla bla bla bla bla
+Our main result will be a final corrected or unfolded coincidence matrix where the excitation energy $E_x$ is plotted versus the gamma energy $E_\gamma$ with number of counts on the z-axis. 
 \end{abstract}
 
 \begin{figure}[htp]
 \centering
-\includegraphics[width=0.5\textwidth]{cactus_forside.jpg}
+\includegraphics[width=0.46\textwidth]{cactus_forside.jpg}
 \caption{The CACTUS detector in the Oslo Cyclotron Laboratory for the study of particle-$\gamma$ coincidences. (\texttt{//www.mn.uio.no/fysikk/english/research/about/infrastructure/OCL/}) }
 \label{fig:front_page}
 \end{figure}
 
 \begin{center}
-{ \scriptsize \noindent All source codes can be found at: \texttt{https://github.com/oslocyclotronlab/oslo-method-software}. }
+{ \scriptsize \noindent All OCL source codes can be found at: \texttt{https://github.com/oslocyclotronlab/oslo-method-software}. }
 \end{center}
 
 \newpage
@@ -346,27 +338,21 @@ where $\langle E_\gamma \rangle$ is the mean of the gamma energies. Another defi
 where $c$ is a constant calculated from a energy level for which the multiplicity is known, by for example equation \ref{eq: M_calc}. $N_c$ is the coincidence spectre and $N_s$ is the single spectre for a given energy $E_x$. The method based on equation \ref{eq: M_iterative} is an iterative method also known as the 'first-generation method'
 %have not explained what single and coincidence spectre means??
 
-The next step in the Oslo method would have been to extract the nuclear level density and the gamma strength function, but we have left this out due to limited time. A master thesis would have included the whole Oslo method and would have a more detailed description of the analysis process than this paper. 
+The next step in the Oslo method would have been to extract the nuclear level density and the gamma strength function, but we have left this out. A master thesis would have included the whole Oslo method and have a more detailed description of the analysis process than this paper. 
 
 
 %would do next:
 %Extraction of the nuclear level density and  -strength function [55]: an iter- ative procedure is developed to fit the experimental matrix of primary  -rays and get both these statistical functions simultaneously. The calculated ex- pressions depend on three parameters, which are then calculated by fitting to experimental data, i.e. both nuclear level density and  -strength functions are normalized.
 
 \section{Discussion and Experiences}
+In this paper we have used experimental data from the ${}^{28}\mathrm{Si(p,p')}^{28}\mathrm{Si}$ reaction, learned about the experimental setup at the Oslo Cyclotron Laboratory and the main aspects of the Oslo method. We have studied the analyze methods that are used to 'clean' raw data at OCL and seen that a large amount of work is needed before one can apply the Oslo method to the data. It is not a surprise that most of the analyze work is done by computer programs developed at OCL as there is millions of datafiles obtained form an experiment. We have also seen that our data matched well with experimental data from the NNDC database.
 
-%what would use this to talys bla bla bla bla bla bla
+Finally we obtained the unfolded coincidence matrix that in a master thesis would have been used to achieve the nuclear level density and the strength function. We have learned that the motivation for using the Oslo method is that the nuclear level density and the strength function is very useful in both reactor and astrophysics. 
 
-
-%see week 6 notes in the begining
-
-
-
-\noindent\rule{\textwidth}{1pt}
+This have been a very educative project, a large thank you to the Oslo Cyclotron Laboratory and Lucia for having us! 
 
 
-
-
-
+%\noindent\rule{\textwidth}{1pt}
 
 \end{document}
 
