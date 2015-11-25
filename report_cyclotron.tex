@@ -29,7 +29,7 @@
 \lstset{showtabs=false}
 \lstset{breaklines}
 
-\title{{\huge {\bf An introduction to the experimental setup and analyze methods used at the Oslo Cyclotron Laboratory by use of experimental data from the $\bf {}^{28}\mathrm{ \bf Si(p,p')}^{28}\mathrm{\bf Si}$ reaction.}}\linebreak \linebreak \small{A project in FYS-3180 at} \linebreak \Large{the University of Oslo} }
+\title{{\huge {\bf An introduction to the experimental setup and analyzing methods used at the Oslo Cyclotron Laboratory by use of experimental data from the $\bf {}^{28}\mathrm{ \bf Si(p,p')}^{28}\mathrm{\bf Si}$ reaction.}}\linebreak \linebreak \small{A project in FYS-3180 at} \linebreak \Large{the University of Oslo} }
 \author{Ina K. B. Kullmann}
 \date{\today}
 
@@ -250,18 +250,16 @@ But when we measure the $\gamma$-rays we might also measure delayed gammas, radi
 %- Selecting coincidences: show the plot and explain what is the prompt peak, what is the time resolution, and how we can calculate the time between beam pulses from the plot. Explain why we need to gate on the prompt peak.
 
 \subsection{ The coincidence matrix}
-When the data from the detectors have been corrected we are ready to plot the final goal; the coincidence matrix. In figure \ref{fig: coincidence} we see the coincidence matrix, the plot of the excitation energy $E_x$ versus the $\gamma$-energy for two different stages of the data analysis. The left plot is the coincidence matrix before the detector and time calibration and the right plot is after the calibration. Due to the calibration we can see that the middle plot has clearer peaks than the left plot. 
+When the data from the detectors have been corrected we are ready to plot the final goal; the coincidence matrix. In figure \ref{fig: coincidence} we see the coincidence matrix, the plot of the excitation energy $E_x$ versus the $\gamma$-energy. This matrix was obtained after particle, gamma and time calibration and the background have also been substracted. In the plot we see clear count peaks corresponding to the excited states of 28Si. 
 
-\begin{figure}[htp]
+\begin{figure}[h!]
 \centering
-\includegraphics[width=0.45\textwidth]{m_alfna_week2.png}
-\includegraphics[width=0.5\textwidth]{coincidence_wback}
+\includegraphics[width=0.75\textwidth]{m_alfna_week2.png}
+%\includegraphics[width=0.5\textwidth]{coincidence_wback}
 %\includegraphics[width=0.3\textwidth]{coincidence_noback}
-\caption{The coincidence matrix, the excitation energy $E_x$ versus the $\gamma$-energy plotted for different stages of the data analysis. \textbf{Left:} before particle calibration. \textbf{Right:} after particle calibration with background (?). }%\textbf{Right:} the final coincidence matrix, calibrated and with the background substracted.}
+\caption{The coincidence matrix, the excitation energy $E_x$ versus the $\gamma$-energy after particle, gamma and time calibration and with the background subtracted. }
 \label{fig: coincidence}
 \end{figure}
-%are those the same matrix??
-
 
 %Show the coincidence matrix. Mention that there is background, how it can be measure and that it was subtracted. Show the diagonal Eg=Ex in the matrix. Why do we see some counts outside? Explain the peaks we see and comp.re them to the results from the nndc website or the TOI.
 
@@ -303,7 +301,7 @@ It is therefore many processes that contributes to the final $\gamma$ spectrum. 
 \[
 f = \bf{R} u
 \]
-where $u$ is the measured spectrum. The response $\bf R$ can be measured, and we assume here that this have already been done. To obtain the unfolded matrix we simply type a command in the \texttt{mama} software developed at OCL. In figure \ref{fig: un_coincidence} we see the matrix obtained after running the unfolding procedure. %To the right we find the final calibrated coincidence matrix with the background substracted. All points under the diagonal $E_x=$E cannot correspond to the reaction because it implies that the incomming energy $E_x$ would be less than the resulting energy E. So it is expected that all the counts below this diagonal disappeares when we substract the background, which we can see is the case in the plot to the right. 
+where $u$ is the measured spectrum. The response $\bf R$ can be measured, and we assume here that this have already been done. To obtain the unfolded matrix we simply type a command in the \texttt{mama} software developed at OCL. In figure \ref{fig: un_coincidence} we see the matrix obtained after running the unfolding procedure. When comparing with figure \ref{fig: coincidence} We see that all points under the diagonal $E_x=$E have disappeared. This is expected because all points under the diagonal $E_x=$E implies that the incomming energy $E_x$ would be less than the resulting energy E. So it is expected that all the counts below this diagonal disappeares after the unfolding, which we can see is the case in \ref{fig: un_coincidence}. 
 
 \begin{figure}[htp]
 \centering
@@ -335,10 +333,9 @@ where $\langle E_\gamma \rangle$ is the mean of the gamma energies. Another defi
 \langle M \rangle = c \cdot \frac{N_c}{N_s}
 \label{eq: M_iterative}
 \end{equation}
-where $c$ is a constant calculated from a energy level for which the multiplicity is known, by for example equation \ref{eq: M_calc}. $N_c$ is the coincidence spectre and $N_s$ is the single spectre for a given energy $E_x$. The method based on equation \ref{eq: M_iterative} is an iterative method also known as the 'first-generation method'
-%have not explained what single and coincidence spectre means??
+where $c$ is a normalisation constant calculated from a energy level for which the multiplicity is known, by for example equation \ref{eq: M_calc}. $N_s$ is the single spectra which means the spectre corresponding to the 'banana' plots. $N_c$ is the coincidence spectre which means the spectre corresponding to the coincidence matrix where each $\gamma$-ray energy correspond, or are in coincidence with a proton. The method based on equation \ref{eq: M_iterative} is an iterative method also known as the 'first-generation method' that when applied extracts the primary $\gamma$-rays from the data. 
 
-The next step in the Oslo method would have been to extract the nuclear level density and the gamma strength function, but we have left this out. A master thesis would have included the whole Oslo method and have a more detailed description of the analysis process than this paper. 
+The next step in the Oslo method would have been to obtain the nuclear level density and the gamma strength function, but we have left this out. A master thesis would have included the whole Oslo method and have a more detailed description of the analysis process than this paper. 
 
 
 %would do next:
