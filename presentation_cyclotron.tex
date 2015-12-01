@@ -1,0 +1,482 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+%\documentclass[notes]{beamer}       % print frame + notes
+%\documentclass[notes=only]{beamer}   % only notes
+\documentclass{beamer}              % only frames
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+
+%\setbeamertemplate{note page}[plain]
+%\setbeameroption{show notes} %un-comment to see the notes
+
+}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+%\usepackage{epstopdf} %tried to include so .eps should work, but it did not, converted to pdf instead
+
+\usepackage[T1]{fontenc} %for å bruke æøå
+\usepackage[utf8]{inputenc}
+\usepackage[norsk]{babel}
+\newcommand{\btVFill}{\vskip0pt plus 1filll}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{"An introduction to the experimental setup and analyzing methods used at the Oslo Cyclotron Laboratory by use of experimental data from the $\bf {}^{28}\mathrm{ \bf Si(p,p')}^{28}\mathrm{\bf Si}$ reaction."} 
+
+\author{Ina Kullmann} % Your name
+\institute[FI] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{Department of Physics, University of Oslo \\ % Your institution for the title page
+\medskip
+\textit{ikkullma@student.matnat.uio.no} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\frame{\titlepage} % Print the title page as the first slide
+\note{snakk om abstract}
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\frame{
+\frametitle{Contents}\tableofcontents}
+\note{snakk om siste avsnitt intro også}
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+
+\section{Motivation and purpose}
+\begin{frame}
+\frametitle{Motivation and purpose}
+\begin{tabular}{cc}
+
+\begin{minipage}{0.5\textwidth}
+\medskip
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.8\textwidth]{cactus_forside.jpg}
+%\caption{The CACTUS detector at the Oslo Cyclotron Laboratory}% for the study of particle-$\gamma$ coincidences. (\texttt{//www.mn.uio.no/fysikk/english/research/about/infrastructure/OCL/}) }
+\label{fig:front_page}
+\end{figure}
+\end{minipage}
+
+\begin{minipage}{0.5\textwidth}
+Applications:
+\begin{itemize}
+\item Astro physics
+\item Reactor physics
+\item Medical diagnosis and treatments
+\end{itemize}
+\note{snakk om introduction (første avsnittene)}
+\end{minipage}
+
+\end{tabular}
+
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\section{Experimental setup and method}
+
+%\begin{frame}
+%\frametitle{Experimental setup and method}
+%%\textbf{The basic consepts of a cyclotron}
+%%\linebreak
+%%\linebreak
+%\begin{figure}[htp]
+%\centering
+%\includegraphics[width=0.4\textwidth]{cyclotron_draw.jpg}
+%\caption{A simple illustration of a cyclotron. }%\footnote{\texttt{http://www.mn.uio.no/fysikk/english/research/about/infrastructure/OCL/ocl-photos/}}}
+%\label{fig:cyclotron_draw}
+%\end{figure}
+%\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Experimental setup and method}
+%The Oslo Cyclotron laboratory (OCL)
+%\linebreak
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.6\textwidth]{ocl-layout_mini.jpg}
+\caption{An overview of the Oslo Cyclotron Laboratory.}% with the experimental hall to the right with the cyclotron at the bottom right. The beam line are indicated with a blue line and the target chamber is at the top left (CACTUS/SiRi). The possible beam types, energy and intensity ranges are indicated in the table to bottom left. }
+\label{fig:OLC_exp_hall}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Experimental setup and method}
+
+\begin{tabular}{cc}
+
+\begin{minipage}{0.5\textwidth}
+\begin{figure}[htp]
+\centering
+\includegraphics[width=\textwidth]{cactus_siri.png}
+\caption{A incident particle hitting a target nucleus.}% The resulting emmited $\gamma$-ray is detected by the CACTUS detectors and the emmitted particle is detected by the SiRi detector.}% The angle between the incident trajectory and the trajectory of the emmitted particle is given as $\theta$. The two parts of the SiRi detector, 'dE' and 'E' is indicated in the figure.}
+\label{fig: cactus_siri}
+\end{figure}
+\end{minipage}
+
+\begin{minipage}{0.5\textwidth}
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.9\textwidth]{siri2.png}
+\caption{A picture of the Silicon Ring (SiRi).}
+\label{fig: siri}
+\end{figure}
+\end{minipage}
+
+\end{tabular}
+\end{frame}
+
+%------------------------------------------------
+%\begin{frame}
+%\frametitle{Experimental setup and method}
+%%The SiRi detectors
+%
+%\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Experimental setup and method}
+%Choice of reaction: ${}^{28}\mathrm{Si(p,p')}^{28}\mathrm{Si}$
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.5\textwidth]{reaction.png}
+\caption{An illustration of the chosen ${}^{28}\mathrm{Si(p,p')}^{28}\mathrm{Si}$ reaction.}
+\label{fig: reaction}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\section{Data analysis of the experimental data}
+\begin{frame}
+\frametitle{Data analysis of the experimental data}
+\bigskip
+\bigskip
+\bigskip
+
+\begin{tabular}{cc}
+
+\begin{minipage}{0.5\textwidth}
+\medskip
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.9\textwidth]{data_nerd.jpg}
+\end{figure}
+\end{minipage}
+
+\begin{minipage}{0.5\textwidth}
+Some of the programs used:
+\begin{itemize}
+\item \texttt{Makefile} 
+\item \texttt{User\_sort.cpp}
+\item \texttt{Name.batch}
+\begin{itemize}
+\item \texttt{gainshifts525.dat}
+\item \texttt{zrangep.dat}
+\end{itemize}
+\end{itemize}
+\end{minipage}
+
+\end{tabular}
+
+\btVFill
+\tiny{All source codes can be found at \texttt{https://github.com/oslocyclotronlab/oslo-method-software}.}
+
+\note{
+\begin{itemize}
+\item \texttt{Makefile:} executable file that calls for example \texttt{User\_sort.cpp} and creates an executable called \texttt{sorting}.
+\item \texttt{User\_sort.cpp:} the main sorting code in C++. It is possible to modify the code to include time gates, gates on excited nuclear states and so on. It defines what the executable \texttt{sorting} will do when it is run. 
+\item \texttt{Sorting:} executable file created by the \texttt{Makefile}. It uses the batch file when run.
+\item \texttt{Name.batch:} holds information on where to find the data files to be sorted. 'Name' is usually the experiment reaction. The file also includes several parameters and calls the following two programmes:
+\begin{itemize}
+\item \texttt{gainshifts525.dat:} contains information about the calibration of the particle and gamma detectors, together with the time signal calibration.
+\item \texttt{zrangep.dat:} the range file for the ejected protons. It has information about how the ejected protons lose energy as they penetrate the E dE Si detectors.
+\end{itemize}
+\end{itemize}
+}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Data analysis of the experimental data}
+%Particle calibration and bananas
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.4\textwidth]{m_e_de_uncalibrated.png}
+\includegraphics[width=0.45\textwidth]{m_e_de_calibrated.png} 
+\caption{The 'particle bananas', or 'dE' versus 'E' plotted. \textbf{Left:} uncalibrated. \textbf{Right:} calibrated.}% Each banana corresponds to one emitted particle. We can also see the peacks corresponding to the excited states of the target nucleus.}
+\label{fig: de_e}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Data analysis of the experimental data}
+%Selecting the data for the ${}^{28}\mathrm{Si(p,p')}^{28}\mathrm{Si}$
+\begin{figure}[htp]
+\centering 
+\includegraphics[width=0.5\textwidth]{h_thick_fromcalibrated_zoom.png}
+\includegraphics[width=0.5\textwidth]{m_e_de_thick.png}
+\caption{Selecting the data for the ${}^{28}$Si(p,p')$^{28}$Si reaction. \textbf{Left:} The calculated thickness of the $\Delta$E detector. \textbf{Right:} The 'banana' plot after particle calibration and gating on one particle banana.}
+\label{fig: banana_gate}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Data analysis of the experimental data}
+%Comparing with the NNDC database
+%\linebreak
+%\linebreak
+\begin{tabular}{cc}
+
+\begin{minipage}{0.5\textwidth}
+\begin{figure}[htp]
+\centering
+\includegraphics[width=\textwidth]{h_ex_calibrated-zoom.png}
+\caption{The coincidence matrix projected on the y axis giving number of counts versus energy, $E_x$. }%Each peak corresponds to a excited state of ${}^{28}$Si. The six first excited stated are marked with a red circle to be compared with table \ref{tab: e_levels}. }
+\label{fig: proj_y_excitation}
+\end{figure}
+\end{minipage}
+
+\begin{minipage}{0.5\textwidth}
+\begin{table}
+\centering
+\caption{The energy levels of ${}^{28}$Si from the Chart of Nuclides found on the NNDC website.}% \texttt{//www.nndc.bnl.gov/chart/getdataset.jsp?nucleus=28SI\&unc=nds}. The uncertain digits are given in a parenthesis. }
+\begin{tabular}{|c|}
+\hline 
+E\_x [keV] \\ 
+\hline 
+0 \\ 
+\hline 
+1779.030 (11) \\ 
+\hline 
+4617.86 (4) \\ 
+\hline 
+4979.92 (8) \\ 
+\hline 
+6276.2 (7) \\ 
+\hline 
+6690.74 (15) \\ 
+\hline 
+\end{tabular} 
+\label{tab: e_levels}
+\end{table}
+\end{minipage}
+
+\end{tabular}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Data analysis of the experimental data: $\gamma$-calibration and treatment of the time signals}
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.4\textwidth]{m_nai_e_t_corrected.png}
+\includegraphics[width=0.5\textwidth]{m_nai_e_t_corrected_fit.png}
+\caption{The time channels plotted versus the energy of the all NaI detectors. \textbf{Left:} uncalibrated plot with time signals shifted due to LED. \textbf{Right:} calibrated plot, corrected whith a curve fitting to the data in the left plot.}
+\label{fig: time_corr}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Data analysis of the experimental data}
+%The coincidence matrix
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.75\textwidth]{m_alfna_week2.png}
+%\includegraphics[width=0.5\textwidth]{coincidence_wback}
+%\includegraphics[width=0.3\textwidth]{coincidence_noback}
+\caption{The coincidence matrix, the excitation energy $E_x$ versus the $\gamma$-energy after particle, gamma and time calibration and with the background subtracted. }
+\label{fig: coincidence}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+%------------------------------------------------
+\section{The Oslo method}
+\begin{frame}
+\frametitle{The Oslo method}
+The Oslo method is based on three main steps:
+\begin{enumerate}
+\item Unfolding of the $\gamma$-ray spectra
+\item Extraction of first-generation $\gamma$-rays
+\item Extraction of the nuclear level density and the gamma strength function
+\end{enumerate}
+\begin{figure}
+%\includegraphics[width=1\textwidth]{list.png}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{The Oslo method:
+Unfolding of the coincidence matrix}
+
+\begin{tabular}{cc}
+\begin{minipage}{0.5\textwidth}
+The $\gamma$-matter interaction:
+\begin{enumerate}
+\item The photo electric effect
+\item Compton scattering
+\item Pair reaction (the gamma can produce a electron-positron pair and one or both can escape. 
+\end{enumerate}
+\end{minipage}
+
+\begin{minipage}{0.5\textwidth}
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.9\textwidth]{gamma_interaction.png}
+%\caption{An illustration of the number of counts versus the gamma energy with the typical peaks obtained due to the photo electric effect, Compton scattering or pair reactions. }
+\label{fig: gamma_interaction}
+\end{figure}
+\end{minipage}
+
+\end{tabular}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{The Oslo method: Unfolding of the coincidence matrix}
+The response matrix $\bf R$
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.7\textwidth]{coincidence_noback}
+\caption{The unfolded coincidence matrix, the excitation energy $E_x$ versus the $\gamma$-energy.}
+\label{fig: un_coincidence}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{The Oslo method: Multiplicity and the extraction of the first-generation (primary) $\gamma$-rays emitted}
+
+%\begin{equation}
+%\langle M \rangle = c \cdot \frac{N_c}{N_s}
+%\label{eq: M_iterative}
+%\end{equation}
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.45\textwidth]{gamma_decay.png}
+\caption{An illustration of the possible paths a photon emitted from an excited state can take to the ground state. The secondary photons are marked with a red circle, the primary unmarked.}
+\label{fig: gamma_decay}
+\end{figure}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\section{Discussion and experiences}
+\begin{frame}
+\frametitle{Discussion and experiences}
+
+\begin{tabular}{cc}
+\begin{minipage}{0.4\textwidth}
+\begin{figure}[htp]
+\centering
+\includegraphics[width=\textwidth]{nebula2.png}
+%\caption{An illustration of the possible paths a photon emitted from an excited state can take to the ground state. The secondary photons are marked with a red circle, the primary unmarked.}
+\label{fig: nebula}
+\end{figure}
+\end{minipage}
+
+\begin{minipage}{0.6\textwidth}
+Learned a lot about:
+\begin{itemize}
+\item Experimental setup
+\item The huge amount of 'data cleaning'
+\item Why such experiments are useful 
+\end{itemize}
+
+
+\end{minipage}
+
+\end{tabular}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\frame{\centering \textbf{Thank you!}}
+
+\end{document} 
